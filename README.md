@@ -14,4 +14,11 @@ terraform init
 terraform plan
 terraform apply 
 ```
-
+#### vars file
+```sh
+name             = "demo"
+cni              = "cilium"
+instance_size    = "g3.k3s.large"
+number_of_nodes  = "2"
+k8s_applications = "Nginx,argo-cd,metrics-server,cert-manager"
+```
